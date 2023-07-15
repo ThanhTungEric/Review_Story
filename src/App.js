@@ -1,26 +1,40 @@
-import React from "react";
-import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
-import Menu from "./views/Menu.js";
-import Login from "./views/Login.js";
-import HomePage from "./views/HomePage.js";
+import React from "react"
+import Navbar from "./compoent/Navbar"
+import Home from "./compoent/Home"
+import About from "./compoent/About"
+import Skills from "./compoent/Skills"
+import Contact from "./compoent/Contact"
+import Services from "./compoent/Services"
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 
-const App = () => {
+//npm install react-router-dom@5
+
+function App() {
   return (
-    <Router>
-      <div>
-        <h1>My App</h1>
-        <Menu />
+    <>
+      <Router>
+        <Navbar />
+
         <Switch>
-          <Route path="/" exact>
-            <HomePage />
+          <Route path='/' compoent={Home} exact>
+            <Home />
           </Route>
-          <Route path="/login">
-            <Login />
+          <Route path='/weather' compoent={About} exact>
+            <About />
+          </Route>
+          <Route path='/skills' compoent={Skills} exact>
+            <Skills />
+          </Route>
+          <Route path='/contact' compoent={Contact} exact>
+            <Contact />
+          </Route>
+          <Route path='/services' compoent={Services} exact>
+            <Services />
           </Route>
         </Switch>
-      </div>
-    </Router>
-  );
-};
+      </Router>
+    </>
+  )
+}
 
-export default App;
+export default App
