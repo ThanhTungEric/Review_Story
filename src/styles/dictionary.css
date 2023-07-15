@@ -1,0 +1,31 @@
+.dictionary-title {
+    color: aqua;
+}
+.input-search {
+    color: brown;
+}
+.box{
+    border-radius: 25px;
+    padding:  8px;
+    margin-left: 10px;
+    margin-right: 10px ;
+}
+.button-find{
+    padding: 8px;
+    border-radius: 10px;
+    cursor: pointer;
+    border-color: crimson;
+    background-color: pink;
+}
+.body-dictionary label {
+        color: rgb(253, 46, 10);
+        margin-right: 10px;
+}
+.body-dictionary input{ 
+    padding:10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+.example-dictionary{
+    width: 500px;
+}
