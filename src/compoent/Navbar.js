@@ -9,7 +9,7 @@ const Navbar = () => {
   return (
     <>
       <nav className='navbar'>
-        <h3 className='logo'>Logo</h3>
+        <h3 className='logo'>SPACECODE.</h3>
         {/*
         if large screen ma xa bhane Mobile add huxa
         if mobile screen ma xa bhane nav-links-mobile add huxa
@@ -18,11 +18,11 @@ const Navbar = () => {
           <Link to='/' className='home'>
             <li>Home</li>
           </Link>
-          <Link to='/about' className='about'>
-            <li>About</li>
+          <Link to='/weather' className='weather'>
+            <li>Weather</li>
           </Link>
           <Link to='/services' className='services'>
-            <li>Services</li>
+            <li>Caculator</li>
           </Link>
           <Link to='/skills' className='skills'>
             <li>Skills</li>

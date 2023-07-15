@@ -1,12 +1,33 @@
-import React from "react"
+import React from "react";
+import Wrapper from "../components/Wrapper";
+import Screen from "../components/Screen";
+import ButtonBox from "../components/ButtonBox";
+import Button from "../components/Button";
+import CalcProvider from "../context/CalcContext";
+import "./Services.css";
 
-const Services = () => {
+const btnValues = [
+  ["C", "+-", "%", "/"],
+  [7, 8, 9, "x"],
+  [4, 5, 6, "-"],
+  [1, 2, 3, "+"],
+  [0, ".", "="],
+];
+
+function Services() {
   return (
-    <>
-      <section className='hero'>
-        <h1>Welcome To Services Page</h1>
-      </section>
-    </>
-  )
+    <div className="body_Caculator">
+      <CalcProvider>
+        <Wrapper>
+          <Screen />
+          <ButtonBox>
+            {btnValues.flat().map((btn, i) => (
+              <Button value={btn} key={i} />
+            ))}
+          </ButtonBox>
+        </Wrapper>
+      </CalcProvider>
+    </div>
+  );
 }
-export default Services
+export default Services;

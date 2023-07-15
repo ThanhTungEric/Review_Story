@@ -19,7 +19,7 @@ function App() {
           <Route path='/' compoent={Home} exact>
             <Home />
           </Route>
-          <Route path='/about' compoent={About} exact>
+          <Route path='/weather' compoent={About} exact>
             <About />
           </Route>
           <Route path='/skills' compoent={Skills} exact>
