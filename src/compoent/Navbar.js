@@ -30,6 +30,9 @@ const Navbar = () => {
           <Link to='/contact' className='home'>
             <li>contact</li>
           </Link>
+          <Link to='/login' className='login'> 
+          <li> login </li>
+          </Link>
         </ul>
         {/* 
         whenever we click on button = setMobile(!Mobile) ==  is mobile oppsite to setMobile 

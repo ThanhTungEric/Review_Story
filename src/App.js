@@ -6,6 +6,7 @@ import Skills from "./compoent/Skills"
 import Contact from "./compoent/Contact"
 import Services from "./compoent/Services"
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
+import Login from "./compoent/Login"
 
 //npm install react-router-dom@5
 
@@ -30,6 +31,9 @@ function App() {
           </Route>
           <Route path='/services' compoent={Services} exact>
             <Services />
+          </Route>
+          <Route path='/login' compoent={Login} exact>
+            <Login  />
           </Route>
         </Switch>
       </Router>
